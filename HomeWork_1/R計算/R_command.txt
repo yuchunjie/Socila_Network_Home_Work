@@ -1,0 +1,63 @@
+Kmeans
+data<-read.csv("d:/R_data/kmeans_sum2.csv", header=T, sep=",")
+bplt<-table(data)
+colors = c("yellow", "cyan", "orange", "blue", "green")
+bp <- barplot(bplt, main="cluster by scores", xlab="Number of UID", col=colors , legend = rownames(counts), beside=TRUE)
+counts<-c("cluster0", "cluster1", "cluster2", "cluster3", "cluster4")
+text(x=bp, y= 200000, labels=as.character(counts), xpd=TRUE)
+
+data<-read.csv("d:/R_data/Score1.csv", header=T, sep=",")
+
+bp <- barplot(bplt, main="cluster by scores", xlab="Number of UID", col=colors, legend = rownames(counts), beside=TRUE, horiz=TRUE)
+text(x= counts+0.3, y= bplt, labels=as.character(counts), xpd=TRUE)
+colors = c("red", "yellow", "green", "violet", "orange", "blue", "pink", "cyan")
+
+2604	2047	2894	548
+
+bplt<-c(2604, 2047, 2894, 548)
+colors = c("yellow", "cyan", "orange", "blue")
+name<-c("F1", "F2", "F3", "F4")
+bp <- barplot(bplt, main="counts by actions", xlab="Numbers of count", col=colors , legend = rownames(name), beside=TRUE)
+counts<-c("2604", "2047", "2894", "548")
+text(x=bp, y= bplt+100, labels=as.character(counts), xpd=TRUE)
+
+
+SVD
+²£¥Í
+u
+d
+v
+data<-read.csv("d:/R_data/score2.csv", header=T, sep=",")
+attach(svd(data))
+plot(u, fg="blue", col=c(590))
+segments(-0.004,-0.02,0,-0.02)
+
+count=sum(u[,2]>(-0.002))
+text(x=0, y=0, labels=as.character(count), xpd=TRUE)
+count=sum(u[,2]<(-0.002) & u[,2]>(-0.005))
+text(x=0, y=-0.003, labels=as.character(count), xpd=TRUE)
+count=sum(u[,2]<(-0.005) & u[,2]>(-0.01))
+text(x=0, y=-0.01, labels=as.character(count), xpd=TRUE)
+
+count=sum(u[,2]<(-0.015) & u[,2]>(-0.021))
+text(x=0, y=-0.02, labels=as.character(count), xpd=TRUE)
+
+count=sum(u[,2]<(-0.023) & u[,2]>(-0.026))
+text(x=0, y=-0.025, labels=as.character(count), xpd=TRUE)
+
+count=sum(u[,2]<(-0.026))
+text(x=0, y=-0.028, labels=as.character(count), xpd=TRUE)
+
+SVD
+data<-read.csv("d:/R_data/score2.csv", header=T, sep=",")
+attach(svd(data))
+Kmeans
+cl<-kmeans(u, 5, iter.max=10, nstart=25)
+library(cluster)
+clusplot(u, cl$cluster, color=TRUE, shade=TRUE, labels=0, lines=0, plotchar=TRUE, span=TRUE, main="K-means", xlab="numbers", ylab="distance")
+library(fpc)
+plotcluster(u, cl$cluster)
+
+BoxPlot
+data<-read.csv("G:/suspected_ratio.txt")
+boxplot(data)
