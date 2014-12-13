@@ -1,0 +1,1 @@
+copy ..\CountWordFreq\out\*.cj_ .\freq_out

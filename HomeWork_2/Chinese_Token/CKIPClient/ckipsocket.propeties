@@ -1,0 +1,6 @@
+host=140.109.19.104
+port=1501
+user=[輸入帳戶名稱]
+pass=[輸入密碼]
+overwrite=true
+charsetcode=big5
