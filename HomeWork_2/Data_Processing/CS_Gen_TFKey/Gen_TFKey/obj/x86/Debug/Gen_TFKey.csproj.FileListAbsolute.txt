@@ -1,0 +1,8 @@
+C:\Users\CJ\Desktop\中文斷詞工具\CS_Gen_TFKey\Gen_TFKey\bin\Debug\Gen_TFKey.exe
+C:\Users\CJ\Desktop\中文斷詞工具\CS_Gen_TFKey\Gen_TFKey\bin\Debug\Gen_TFKey.pdb
+C:\Users\CJ\Desktop\中文斷詞工具\CS_Gen_TFKey\Gen_TFKey\bin\Debug\Centivus.EnglishStemmer.dll
+C:\Users\CJ\Desktop\中文斷詞工具\CS_Gen_TFKey\Gen_TFKey\obj\x86\Debug\Gen_TFKey.csprojResolveAssemblyReference.cache
+C:\Users\CJ\Desktop\中文斷詞工具\CS_Gen_TFKey\Gen_TFKey\obj\x86\Debug\Gen_TFKey.exe
+C:\Users\CJ\Desktop\中文斷詞工具\CS_Gen_TFKey\Gen_TFKey\obj\x86\Debug\Gen_TFKey.pdb
+C:\Users\CJ\Desktop\Socila_Network_Home_Work\HomeWork_2\Data_Processing\CS_Gen_TFKey\Gen_TFKey\obj\x86\Debug\Gen_TFKey.exe
+C:\Users\CJ\Desktop\Socila_Network_Home_Work\HomeWork_2\Data_Processing\CS_Gen_TFKey\Gen_TFKey\obj\x86\Debug\Gen_TFKey.pdb
